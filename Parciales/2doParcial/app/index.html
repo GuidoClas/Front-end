@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="/js/Vehiculo.js"> </script>
+    <script type="text/javascript" src="/js/Auto.js"> </script>
+    <script type="text/javascript" src="/js/Camioneta.js"> </script>
+    <script type="text/javascript" src="/js/Utils.js"> </script>
+    <script type="text/javascript" src="/js/main.js"> </script>
+    <title>Gestión de Vehiculos</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ALTA-->
+        <div>
+            <input type="button" class="button1" id="btnAlta" value="Alta">
+        </div>
+        <!-- ALTA-->
+        <!-- FILTROS-->
+        <h1>Filtros</h1>
+        <label for="tipoAuto">Filtrar por</label>
+    
+        <select name="tipoDeVehiculo" id="aplicaFiltro">
+            <option value="Auto">Auto</option>
+            <option value="Camioneta">Camioneta</option>
+        </select>
+        <!-- FILTROS-->
+        <!-- PROMEDIO -->
+        <div class="promedios">
+            <label for="promedioDePrecios"> Promedio de precio </label>
+            <input type="text" id="promedio" name="promedio" class="promedio">
+            <input type="button" id="btnPromedio"  class="btnPromedios" value="Calcular Promedio">
+        </div>
+        <!-- PROMEDIO -->
+        <!--<h2>Campos mostrados: Tildar los campos a mostrar</h3> -->
+        <br>                              
+    </div>
+    <!-- COMIENZO DE FORMULARIO -->
+    <div class="container" id="container">
+        <div class="formContainer" id="formContainer">
+            <input class="button2" type="button" id="btnCerrar" value="X">
+            <br>
+            <label for="Id">ID</label>
+            <br>
+            <input type="text" id="id" name="nombre" placeholder="Id" disabled=true>
+            <br>
+            <label for="marcaVehiculo">Marca</label>
+            <br>
+            <input type="text" id="marcaVehiculo" name="nombre" placeholder="Marca">
+            <br>
+            <label for="modeloVehiculo">Modelo</label>
+            <br>
+            <input type="text" id="modeloVehiculo"  name="nombre" placeholder="Modelo">
+            <br>
+            <label for="precioVehiculo">Precio</label>
+            <br>
+            <input type="number" id="precioVehiculo" name="nombre" placeholder="Precio">
+            <br>
+            <label for="vehiculos">Tipo</label>
+            <select name="tiposVehiculo" id="tipoDeVehiculo">
+                <option value="Auto">Auto</option>
+                <option value="Camioneta">Camioneta</option>
+            </select>
+            <br>
+            <div id="esCamioneta" hidden>
+                <label for="tipo">Tipo Camioneta</label>
+                <select name="tipoCamioneta" id="tipoCamioneta">
+                    <option value="4x4">4x4</option>
+                    <option value="No4x4">Otros</option>
+                </select>
+                <br>
+            </div>
+            <div id="esAuto" hidden>
+                <label for="tipo">Puertas</label>
+                <input type="number" max="5" min="2" id="cantidadPuertas" name="puertas" placeholder="Cantidad de puertas">
+            </div>  
+            <input class="button3" type="button" id="btnAgregar" value="Agregar">
+        </div>
+    </div>
+    <!-- FIN DE FORMULARIO -->
+    <!-- COMIENZO DE TABLE -->
+    <div class="wrapperTable">
+        <h2>Listado De Vehiculos</h2>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Vehiculo</th>
+                    <th>Caracteristica</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <!-- FIN DE TABLE -->
+    </div>
+</body>
+</html>

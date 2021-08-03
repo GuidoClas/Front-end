@@ -1,0 +1,169 @@
+body{
+    background: linear-gradient(135deg,#e2d520, rgb(216, 215, 215));
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: none;
+}
+
+.formContainer{
+    top: 135px;
+    right: 33%;
+    position: fixed;
+    width: 30%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.wrapper .promedios{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    text-align: center;
+    padding: 2px;
+}
+
+tr:nth-child(even){background-color: rgb(190, 190, 190);}
+tr:nth-child(odd){background-color: rgb(238, 236, 236);}
+
+th{
+    background-color: rgb(88, 88, 88);
+    color: rgb(235, 235, 235);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.wrapperTable h2{
+    text-align: center;
+}
+
+.listaMascotas{
+
+    display: inline-block;
+    
+}
+
+.promedio{
+    width: 10% !important;
+    height: 2px !important;
+    padding: 10px 18px !important;
+    margin: 8px 0 !important;
+    display: inline-block !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    border: 1px solid #cccccc !important;
+}
+
+input[type=text],[type=number]{
+    padding: 10px 18px;
+    display: inline-block;
+    margin: 8px 0;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.btnPromedios{
+    width: 30%;
+    background-color:rgb(200, 181, 8);
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: solid 1px black;
+    border-radius: 4px;
+    cursor: pointer;
+    float:center;
+}
+
+.btnPromedios:hover{
+    background-color:rgb(228, 206, 7);
+    color: rgb(8, 8, 8);
+}
+
+.btnEliminar{
+    width: 45%;
+    background-color:rgb(200, 181, 8);
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: solid 1px black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btnEliminar:hover{
+    background-color:rgb(231, 209, 6);
+    color: rgb(5, 5, 5);
+}
+
+.container .formContainer .button2
+{
+    width: 5%;
+    background-color: rgb(200, 181, 8);
+    color: rgb(245, 243, 243);
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .formContainer .button2:hover{
+    color: black;
+    background-color: rgb(228, 206, 7);
+}
+
+.container .formContainer .button3{
+    width: 50%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    background-color: rgb(200, 181, 8);
+    color: rgb(245, 243, 243);
+    position: relative;
+    cursor: pointer;
+    float: right;
+}
+
+.container .formContainer .button3:hover{
+    background-color: rgb(216, 219, 18);
+    color: rgb(10, 10, 10);
+}
+
+.wrapper .button1{
+    width: 5%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    background-color:rgb(200, 181, 8);
+    color: white;
+    border: solid 1px black;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+.wrapper .button1:hover{
+    background-color:rgb(216, 219, 18);
+    color: black;
+}
+
+    

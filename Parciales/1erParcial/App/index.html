@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/functions.js" type="module"></script>
+    <script src="./js/requests.js" type="module"></script>
+    <script src="./js/table.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <title>ModeloParcial</title>
+</head>
+<body>
+    <div id="spinner">
+        <img src="/img/spinning-circles.svg" alt="Spinner" id="spinner-modal">
+    </div>
+    <form id="form">
+        <input type="button" value="X" id="btnCancelar"> <br>
+
+        <input type="hidden" id="txtId" name="id">
+        <label for="txtNombre" class="labels">Nombre</label> 
+        <input type="text" id="txtNombre" name="nombre"> <br><br>
+
+        <label for="selectCuatri" class="labels">Cuatrimestre</label> 
+        <select name="cuatrimestre" id="selectCuatri" disabled="true">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select> <br>
+
+        <label for="txtFecha" class="labels">Fecha</label> 
+        <input type="date" id="txtFecha" name="fechaFinal"> <br>
+
+        <label class="labels">Turno</label> <br>
+        <label for="turno" class="labels">Mañana</label>
+        <input type="radio" name="turno" id="M">
+        <label for="turno" class="labels">Noche</label>
+        <input type="radio" name="turno" id="N"> <br>
+        
+        <input type="button" value="Eliminar" id="btnEliminar" class="btn">
+        <input type="button" value="Guardar" id="btnGuardar" class="btn">
+    </form>
+    <div id="divTable">
+        <h1>Listado de Personas</h1>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha Final</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">  
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

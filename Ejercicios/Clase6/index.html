@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="position.css" rel="stylesheet" type="text/css">
+    <!-- <script src="Form.js" type="text/javascript"></script>  
+    <script src="Grilla.js"></script>
+    <script src="Clase5.js"></script> -->
+    <script src="Clase6.js"></script> 
+    <script src="Position.js"></script>
+       
+
+    <title>Document</title>
+</head>
+<body id = "body"> 
+    <div id="popUp" class="popUp" hidden>        
+            <div>
+                <img src="https://cdn.icon-icons.com/icons2/10/PNG/256/user_person_customer_man_1532.png" height="100px" width="100px" alt="F">
+            </div>
+            <br>
+            <label for="impNombre">Nombre:</label>
+            <input id="impNombre" type="text">            
+            <label for="impApellido">Apellido:</label>
+            <input id="impApellido" type="text">
+            <label for="impFecha">Fecha:</label>
+            <input id="impFecha" type="text">
+            <label for="impTelef">Telefono:</label>
+            <input id="impTelef" type="text">
+    </div>
+
+    <br><br><br><br><br>
+
+
+    <div id="contenedor">
+ 
+        
+    </div>
+
+    <div>
+        <select id="selecDirection" onchange="changeValue()">
+            <option>row</option>
+            <option>column</option>
+            <option>row-reverse</option>
+            <option>column-reverse</option>                                
+        </select>
+        <select id="selecContent" onchange="changeValue()">
+            <option>flex-start</option>
+            <option>flex-end</option>
+            <option>center</option>
+            <option>space-between</option>   
+            <option>space-around</option>                                     
+        </select>
+        <select id="selecAlign" onchange="changeValue()">
+            <option value="stretchA">stretch</option>
+            <option value="flex-startA">flex-start</option>
+            <option value="centerA" selected>center</option> 
+            <option value="flex-endA">flex-end</option>   
+            <option value="baselineA">baseline</option>                                     
+        </select>
+    </div>    
+</body>
+</html>
